@@ -348,3 +348,149 @@ img{
   display: flex;
   justify-content: center;
 }
+
+/* Skills section Style*/
+
+.skills_container{
+  row-gap: 0;
+}
+.skills_header{
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills_icon,
+.skills_arrow{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills_icon{
+  margin-right: var(--mb-0-75);
+}
+
+.skills_title{
+  font-size: var(--h3-font-size);
+}
+
+.skills_subtitle{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.skills_arrow{
+  margin-left: auto;
+  transition: .4s;
+}
+
+.skills_list{
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.skills_titles{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+.skills_name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills_bar,
+.skills_percentage{
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skills_bar{
+  background-color: var(--first-color-lighter);
+}
+
+.skills_percentage{
+  display: block;
+  background-color: var(--first-color);
+}
+
+.skills_html{
+  width: 80%;
+}
+
+.skills_css{
+  width: 70%;
+}
+
+.skills_js{
+  width: 40%;
+}
+
+.skills_angular{
+  width: 40%;
+}
+
+.skills_ts{
+  width: 30%;
+}
+
+.skills_close .skills_list{
+  height: 0;
+  overflow: hidden;
+}
+
+.skills_open .skills_list{
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+}
+
+.skills_open .skills_arrow{
+  transform: rotate(-180deg);
+}
+
+/* Education Section */
+.education_tabs{
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--mb-2);
+}
+
+.education_button{
+  font-size:var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  padding: 1.5rem;
+}
+.education_button:hover{
+  color: var(--first-color)
+}
+
+.education_icon{
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+
+.education_data {
+  display: grid;
+  column-gap: 1.75rem;
+  row-gap: 1.5rem;
+  grid-template-columns: 1fr max-content;
+}
+
+.education_title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.education_subtitle{
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.education_calendar{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
